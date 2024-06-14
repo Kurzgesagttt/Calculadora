@@ -1,7 +1,15 @@
-h1{
-    color: aqua;
-}
-form{
+body{
     padding: 10px;
-    border: solid 1px ;
+}
+
+form{
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    font-size: arial;
+    border: solid 1px;
+}
+
+h1{
+    font: 30px;
 }
