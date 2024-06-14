@@ -1,15 +1,15 @@
 body{
     padding: 10px;
+    font-size: 13px;
 }
-
-form{
-    text-align: center;
-    padding: 10px;
-    font-size: 12px;
-    font-size: arial;
-    border: solid 1px;
+.calcButton{
+    padding: 5px;
+    width: 100%;
 }
-
-h1{
-    font: 30px;
+button:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.display{
+    width: auto;
 }
