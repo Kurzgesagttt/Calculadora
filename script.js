@@ -1,3 +1,1 @@
-function addToDisplay(){
-    
-}
+document.getElementById("display").innerHTML = "1231";
