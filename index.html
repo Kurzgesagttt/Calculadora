@@ -7,37 +7,30 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="calculadora">
-        
-    <h1>Calculadora</h1>
-    <table>
-        <tr colspan="4">
-            <p id="display"></p>
-        </tr>
-        <tr>
-            <td><button class="calcButton" id="num7" value="7" onclick="addToDisplay">7</button></td>
-            <td><button class="calcButton" id="num8" value="8" onclick="addToDisplay" >8</button></td>
-            <td><button class="calcButton" id="num9" value="9" onclick="addToDisplay">9</button></td>
-            <td><button class="calcButton" id="soma" value="+">+</button></td>
-            <td> <button class="calcButton" id="btnC">C</button> </td>
-        </tr>
-        <tr>
-            <td><button class="calcButton" id="num4" value="4" onclick="addToDisplay">4</button></td>
-            <td><button class="calcButton" id="num5" value="5" onclick="addToDisplay">5</button></td>
-            <td><button class="calcButton" id="num6" value="6" onclick="addToDisplay">6</button></td>
-            <td><button class="calcButton" id="subtracao" value="-">-</button></td>
-        </tr>
-        <tr>
-            <td><button class="calcButton" id="num1" value="1" onclick="addToDisplay">1</button></td>
-            <td><button class="calcButton" id="num2" value="2" onclick="addToDisplay">2</button></td>
-            <td><button class="calcButton" id="num3" value="3" onclick="addToDisplay">3</button></td>
-            <td><button class="calcButton" id="result" value="=">=</button></td>
-        </tr>
-        <tr>
-            <td> <button class="calcButton" id="num0" value="0" onclick="addToDisplay">0</button> </td> 
-        </tr>
-        </table>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="addToDisplay('+')" class="operatorBtn">+</button>
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('-')" class="operatorBtn">-</button>
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('*')" class="operatorBtn">*</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('/')" class="operatorBtn">/</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('.')" >.</button>
+            <button onclick="calculate()" >=</button>
+            <button onclick="clearDisplay()" class="operatorBtn">C</button>
+
+        </div>
+    
     </div>  
-    <script src="script.js"></script>
+    <script src="script.js"> </script>
 </body>
 </html>
